@@ -11,8 +11,10 @@ public:
 	void setInitialMapp();
 	void setContinueMapp();
 	void setFinalMapp();
-	void setGeneralParameters(int fuel, int life);
-	void setPlanetSurfaceParameters(int fuel, int life);
-	void setSolarSystemParameters(int fuel, int life, int universo);
+	void setGeneralParameters(int fuel, int life, int score);
+	void setPlanetSurfaceParameters(int fuel, int life, int score);
+	void setSolarSystemParameters(int fuel, int life, int score, int universo);
 	void ShowConsoleCursor(bool showFlag);
 };
+
+

@@ -1,7 +1,6 @@
 #pragma once
-typedef class Bullets* ptr_Bullets;
-typedef class PlanetSurface* ptr_PlanetSurface;
-typedef class Spaceship* ptr_Spaceship;
+
+#include "BulletsList.h"
 
 typedef class Bunker1* ptr_Bunker1;
 struct listaBunker1 {
@@ -16,15 +15,18 @@ protected:
 	int xBunker1;
 	int yBunker1;
 	int lifeBunker1;
-	ptr_Bullets SX;
-	ptr_Bullets DX;
+	ptr_BulletsList LPsx;
+	ptr_BulletsList LPdx;
 public:
 	Bunker1(int x, int y, int life);
 	int coordinateBunker1(bool b);
 	void minusLife();
 	int returnLife();
-	void addSpari(int x, int y);
-	void refreshSpari(Spaceship& p, ptr_PlanetSurface planet);
+	void addBulletSBunker1();
+	void deleteBulletSBunker1();
+	void deleteAllBulletsBunker1();
+	ptr_BulletsList returnLP(int n);
 };
 typedef class Bunker1* ptr_Bunker1;
+
 
